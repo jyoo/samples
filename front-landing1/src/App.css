@@ -1,0 +1,77 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.app {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  min-height: 100vh;
+  background-image: url("./assets/bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 20%;
+}
+
+.MuiPaper-elevation4 {
+  -webkit-box-shadow: none !important;
+	-moz-box-shadow: none !important;
+	box-shadow: none !important;
+}
+
+
+.subscribe-btn {
+  background: none !important;
+  /* box-shadow: none !important; */
+  mix-blend-mode: screen !important;
+  color: black;
+  padding: 10px 30px !important;
+  font-size: 110% !important;
+}
+
+.subscribe-btn::before {
+  position: absolute !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: white !important;
+  content: '';
+  mix-blend-mode: color-burn !important;
+  padding: 10px 30px !important;
+  font-size: 110% !important;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
